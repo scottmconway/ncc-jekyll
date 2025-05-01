@@ -1,0 +1,57 @@
+---
+layout: primary_and_sidebar
+title: The Board of NCC
+subtitle: THE BOARD OF NCC
+---
+
+{% comment %}
+{% endcomment %}
+
+{% for officer in site.data.officers %}
+    {% assign remainder = forloop.index0 | modulo: 4 %}
+    {% if remainder == 0 %}
+        <div class="wrap mcb-wrap one  valign-top clearfix">
+            <div class="mcb-wrap-inner">
+    {% endif %}
+
+    <div class="column mcb-column one-fourth column_our_team ">
+        <div class="team team_vertical">
+            {% if officer.image_path %}
+                <div class="image_frame photo no_link scale-with-grid">
+                    <div class="image_wrapper">
+                        <img class="scale-with-grid" src="{{ officer.image_path }}" alt="{{ officer.name }}">
+                    </div>
+                </div>
+            {% endif %}
+            <div class="desc_wrapper">
+                <h4>{{ officer.name }}</h4>
+                <p class="subtitle">{{ officer.title }}</p>
+                <hr class="hr_color">
+                <div class="desc">
+                    {% if officer.biography %}
+                        <a href="#popup-{{ officer.name | remove: " " }}" rel="prettyphoto" class="popup-link">Read full biography</a>
+                        <div id="popup-{{ officer.name | remove: " " }}" class="popup-content">
+                            <div class="popup-inner" style="padding:20px;">
+                                <h4>{{ officer.name }} Biography</h4>
+                                    <p>{{ officer.biography }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="links">
+                    <a href="mailto:{{ officer.email }}" class="icon_bar icon_bar_small">
+                        <span class="t"><i class="icon-mail"></i></span>
+                        <span class="b"><i class="icon-mail"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if remainder == 3 %}
+        </div></div>
+    {% endif %}
+
+{% endfor %}
+</div>
+</div>

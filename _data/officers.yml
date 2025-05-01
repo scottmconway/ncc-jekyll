@@ -1,0 +1,77 @@
+- name: "Leslie Hatfield"
+  title: "President"
+  email: "president@necaveconservancy.org"
+  biography: "Leslie’s foray into caving was somewhat accidental, occurring after she purchased land with a cave entrance and a cave running beneath it. She is a retired earth science teacher who introduced many students, as well as family and friends, to their first caving experience with a visit to the NCC’s Clarksville Cave. Leslie’s interest in the NCC, as a landowner, is to assist the NCC with its efforts in the areas of conservation and study of caves and karst areas."
+  image_path: "/assets/images/officers/leslie_hatfield.jpg"
+
+- name: "Kevin Dumont"
+  title: "Vice President"
+  email: "vicepresident@necaveconservancy.org"
+  biography: "Kevin started caving in 1986 and has served either as a trustee or preserve manager for the NCC since 2010, and as Vice President since 2025. He has two graduate degrees in the geological sciences and enjoys promoting science education, particularly related to karst. He currently works as an Earth Science teacher in the city of Newburgh."
+  image_path: "/assets/images/officers/kevin_dumont.jpg"
+
+- name: "Ben Brown"
+  title: "Treasurer"
+  email: "treasurer@necaveconservancy.org"
+  biography: null
+  image_path: null
+
+- name: "Ramon Armen"
+  title: "Secretary"
+  email: "secretary@necaveconservancy.org"
+  biography: "Ramon started caving and digging in the northeast in 2012. He served as Trip Chair for Boston Grotto from 2013-2016, is active with the Berkshire Area Digger's Association, and has helped discover, explore, and survey several of the longest caves in New England. He enjoys project caving, exploration, cave photography, and introducing new people to the world of caving."
+  image_path: "/assets/images/officers/ramon_armen.jpg"
+
+- name: "Mitch Berger"
+  title: "Trustee"
+  email: "m.berger@necaveconservancy.org"
+  biography: "Mitch started caving in 2005, when he first visited Clarksville with the MIT Caving Club. He spent several years leading trips for that club, training new leaders, and occasionally serving as Secretary. He became involved with the NCC in 2012 shortly after being disappointed when his group was denied permission to visit a cave - this sparked his interest in landowner relationships and what's involved in caring for and maintaining a cave preserve for the community to enjoy (the NCC now owns this cave). He's currently manager of the Knox Cave Preserve. A life member of the NSS, he's active in the Boston Grotto, a member of the Helderberg-Hudson Grotto, and has served as Vice Chair and then Chair of the NRO. He caves and digs in the northeast, and occasionally West Virginia."
+  image_path: "/assets/images/officers/mitch_berger.jpg"
+
+- name: "Morgan Ingalls"
+  title: "Trustee"
+  email: "m.ingalls@necaveconservancy.org"
+  biography: "Morgan has been caving since 2008 and has been an NCC board member since 2011, where she is also the Merlins Preserve Manager. Morgan’s life revolves around caves, bats, and conservation, and can frequently be found caving, digging, and surveying in Massachusetts and Vermont. She holds a B.S. Biochemistry from Marlboro College, and an M.Sci. in Environmental Studies with a focus on Conservation Biology from Antioch University New England. She currently lives in southern Vermont and works as a bat biologist through out the northeast."
+  image_path: "/assets/images/officers/morgan_ingalls.jpg"
+
+- name: "Jacob Morris-Siegel"
+  title: "Trustee"
+  email: "j.morris-siegel@necaveconservancy.org"
+  biography: "Jacob has been caving since 2011. He is currently the Vice-President of the Vermont Cavers Association, and is actively digging, exploring, and surveying caves with the Berkshire Area Diggers Association. He has his B.S in Biology from Umass Amherst. For the past 9 years he has worked for the Massachusetts Division of Fisheries and Wildlife and is currently the Stewardship Biologist for their Western District Office."
+  image_path: "/assets/images/officers/jacob_morris_siegel.png"
+
+- name: "Paul Rubin"
+  title: "Trustee"
+  email: "p.rubin@necaveconservancy.org"
+  biography: null
+  image_path: "/assets/images/officers/paul_rubin.png"
+
+- name: "Erik Nieman"
+  title: "Trustee"
+  email: "e.nieman@necaveconservancy.org"
+  biography: null
+  image_path: "/assets/images/officers/erik_nieman.jpg"
+
+- name: "R. Laurence Davis"
+  title: "Trustee"
+  email: "l.davis@necaveconservancy.org"
+  biography: null
+  image_path: null
+
+- name: "Cara Gentry"
+  title: "Trustee"
+  email: "c.gentry@necaveconservancy.org"
+  biography: null
+  image_path: null
+
+- name: "Joe Levinson"
+  title: "Trustee"
+  email: "j.levinson@necaveconservancy.org"
+  biography: null
+  image_path: null
+
+- name: "Norm Berg"
+  title: "Trustee"
+  email: "n.berg@necaveconservancy.org"
+  biography: null
+  image_path: null
