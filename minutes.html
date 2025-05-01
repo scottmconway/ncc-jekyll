@@ -1,0 +1,34 @@
+---
+layout: primary_and_sidebar
+title: Board Minutes
+subtitle: Board Meeting Minutes
+description_paragraphs:
+    - The NCC holds four board meetings each year. Members are welcome to attend and encouraged to speak during the Committee of the Whole.
+---
+
+{% comment %}
+This page renders all newsletter PDF files under /newsletters/.
+
+Newsletters MUST be named in the following format to be entered into the appropriate section on this page:
+YYYY-MM-DD_minutes_LOCATION.pdf, where LOCATION is a string containing any (filesafe) characters except for underscores.
+{% endcomment %}
+
+{% assign pdf_files = site.static_files | where_exp:"file", "file.extname == '.pdf' and file.path contains '/assets/documents/minutes/'" %}
+{% assign grouped_files = pdf_files | group_by_exp:"item", "item.name | slice: 0, 4" | reverse %}
+
+{% for year_group in grouped_files %}
+    <div class="column mcb-column one-fourth column_column  column-margin-10px" style="height: 246px;">
+        <div class="column_attr clearfix" style="background-color:/#D2C4B0; padding:20px;">
+            <h4 align="center">{{ year_group.name }}</h4>
+            <hr class=" hr_color" style="margin: 0 auto 20px;">
+            <p>
+                {% assign year_items_reversed = year_group.items | reverse %}
+                {% for pdf_file in year_items_reversed %}
+                    {% assign month = pdf_file.name | split: "_" | first | date: "%B" %}
+                    {% assign location = pdf_file.name | split: "_" | last | split: "." | first %}
+                    {{ location }} - <a href="{{ pdf_file.path }}" target="_blank">{{ month }}</a><br>
+                {% endfor %}
+            </p>
+        </div>  
+    </div>
+{% endfor %}

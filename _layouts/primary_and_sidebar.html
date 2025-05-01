@@ -1,0 +1,36 @@
+{% include header.html %}
+<div id="Content">
+  <div class="content_wrapper clearfix">
+    <!-- .sections_group -->
+    <div class="sections_group">
+      <div class="entry-content" itemprop="mainContentOfPage">
+          {% if page.sections %}
+            {% for section in page.sections %}
+              {% include {{ section }} %}
+            {% endfor %}
+          {% else %}
+
+          {% include subtitle_section.html %}
+
+          <div class="section mcb-section" style="padding-top:10px; padding-bottom:0px; background-color:#F0EBE3">
+          <div class="section_wrapper mcb-section-inner">
+            <div class="wrap mcb-wrap one valign-top clearfix">
+                <div class="mcb-wrap-inner">
+                    {{ content }}
+                </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        <div class="section the_content no_content"></div>
+        <div class="section section-page-footer">
+          <div class="section_wrapper clearfix">
+            <div class="column one page-pager"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include sidebar.html %}
+  </div>
+</div>
+{% include footer.html %}

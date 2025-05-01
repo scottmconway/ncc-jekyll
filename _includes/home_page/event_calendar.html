@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.7.45">
+  <title></title>
+</head>
+<body>
+  <div class="wrap mcb-wrap one-second valign-top clearfix">
+    <div class="mcb-wrap-inner">
+      <div class="column mcb-column one column_column column-margin-">
+        <div class="column_attr clearfix">
+          <img class="scale-with-grid" src="/assets/images/home_page/NCC-Events.jpg" alt="">
+          <hr class="no_line" style="margin: 0 auto 14px;">
+          <h4>NCC Events Calendar</h4>
+        </div>
+      </div>
+      {% for event in site.data.upcoming_events.upcoming_events %}
+      <div class="column mcb-column one-second column_icon_box">
+        <div class="icon_box icon_position_top no_border">
+          <div class="icon_wrapper">
+            <div class="icon">
+                <i class="icon-calendar-line"></i>
+            </div>
+          </div>
+          <div class="desc_wrapper">
+            <div class="desc">
+                <h5 style="color:#00644B;">{{ event.date }}</h5>
+              <p><b>{{ event.name}}</b><br>
+              {{ event.location_and_time }}<br>
+              {{ event.description | markdownify }} <br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

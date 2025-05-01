@@ -1,0 +1,50 @@
+<div class="section mcb-section equal-height" style=
+"padding-top:30px; padding-bottom:40px; background-color:#D2C4B0">
+<div class="section_wrapper mcb-section-inner">
+  <div class=
+  "wrap mcb-wrap one column-margin-20px valign-top clearfix"
+  style="padding:0 3% 0 0">
+    <div class="mcb-wrap-inner">
+      <div class=
+      "column mcb-column one column_column column-margin-"
+      style="height: 111px;">
+        <div class="column_attr clearfix">
+          <h2>CAVES OWNED BY THE NORTHEASTERN CAVE CONSERVANCY
+          (NCC)</h2>
+          <div style=
+          "width: 20%; height: 3px; background: #47360D; display: inline-block;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=
+  "wrap mcb-wrap one column-margin-10px valign-middle clearfix"
+  style="padding:0 3% 0 0">
+    <div class="mcb-wrap-inner">
+      {% for preserve in site.preserves %}
+      <div class=
+      "column mcb-column one-third column_column column-margin-10px"
+      style="height: 325px;">
+        <div class="column_attr clearfix" style=
+        "background-color:/#F0F0F0; padding:20px;">
+            <h5>{{ preserve.title }}</h5>
+          <hr class="hr_color" style="margin: 0 auto 20px;">
+          {% if preserve.shortRequirements %}
+          <ul>
+            {% for req in preserve.shortRequirements %}
+            <li>
+              {{ req | markdownify }} </li>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <p>Contact Preserve Manager:<br>
+          <a href=
+          "mailto:{{ preservce.email }}">{{ preserve.email }}</a></p>
+        </div>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+</div>

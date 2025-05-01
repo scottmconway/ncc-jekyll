@@ -1,0 +1,22 @@
+{% include header.html %}
+<div id="Content">
+  <div class="content_wrapper clearfix">
+    <!-- .sections_group -->
+    <div class="sections_group">
+      <div class="entry-content" itemprop="mainContentOfPage">
+          {% for section in page.sections %}
+          {% include {{ section.file }} data=section.data %}
+          {% endfor %}
+
+        <div class="section the_content no_content"></div>
+        <div class="section section-page-footer">
+          <div class="section_wrapper clearfix">
+            <div class="column one page-pager"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include sidebar.html %}
+  </div>
+</div>
+{% include footer.html %}

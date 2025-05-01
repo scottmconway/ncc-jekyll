@@ -1,0 +1,105 @@
+<div class="section mcb-section" style=
+"padding-top:40px; padding-bottom:20px; background-color:#D2C4B0">
+<div class="section_wrapper mcb-section-inner">
+  <div class="wrap mcb-wrap one valign-top clearfix" style=
+  "padding:0 3% 0 0">
+    <div class="mcb-wrap-inner">
+      <div class=
+      "column mcb-column one column_column column-margin-">
+        <div class="column_attr clearfix" style=
+        "background-color:/#D2C4B0;">
+          <h3>General Cave Permit Information</h3>
+          <p class="big">Find all general cave permit
+          information and cave guidelines <a href=
+          "/cave-permit-info/">here</a>. Note that individual
+          preserves may have additional permit requirements;
+          please refer to the page for the preserve you would
+          like to visit for more information.</p>
+        </div>
+      </div>
+      <div class=
+      "column mcb-column one column_column column-margin-">
+        <div class="column_attr clearfix" style=
+        "background-color:/#D2C4B0;">
+          <h3>Special Use Group Form Requirements</h3>
+          <p class="big"><a href=
+          "/assets/documents/2019-NCC-Form-requirements.pdf">
+          NCC Form Requirements</a></p>
+          <p class="big"><a href=
+          "/assets/documents/2019-NSS-Form-requirements.pdf">
+          NSS Form Requirements</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=
+  "wrap mcb-wrap one-second column-margin-20px valign-top clearfix"
+  style="padding:0 3% 0 0">
+    <div class="mcb-wrap-inner">
+      <div class=
+      "column mcb-column one column_column column-margin-">
+        <div class="column_attr clearfix align_justify">
+          <h3>Other Cave Conservancies</h3>
+          <div style=
+          "width: 20%; height: 3px; background: #47360D; display: inline-block;">
+          </div>
+          <ul>
+              {% for conservancy in site.data.cave_conservancies%}
+            <li>
+                <a href="{{ conservancy.link }}" target=
+                         "_blank">{{ conservancy.name }}</a>
+            </li>
+              {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=
+  "wrap mcb-wrap one-second column-margin-20px valign-top clearfix"
+  style="padding:0 3% 0 0">
+    <div class="mcb-wrap-inner">
+      <div class=
+      "column mcb-column one column_column column-margin-">
+        <div class="column_attr clearfix">
+          <h3>Regional Grottos</h3>
+          <div style=
+          "width: 20%; height: 3px; background: #47360D; display: inline-block;">
+          </div>
+          <ul>
+            {% for grotto in site.data.regional_grottos %}
+              <li>
+                  <a href="{{ grotto.link }}" target=
+                           "_blank">{{ grotto.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=
+  "wrap mcb-wrap divider column-margin-20px valign-top clearfix"
+  style="padding:0 3% 0 0">
+    <div class="mcb-wrap-inner"></div>
+  </div>
+  <div class=
+  "wrap mcb-wrap one column-margin-20px valign-top clearfix"
+  style="padding:0 3% 0 0">
+    <div class="mcb-wrap-inner">
+      <div class=
+      "column mcb-column one column_column column-margin-">
+        <div class="column_attr clearfix">
+          <h3>National Organizations</h3>
+          <ul>
+            <li>
+              <a href="http://www.caves.org/" target=
+              "_blank">National Speleological Society (NSS)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

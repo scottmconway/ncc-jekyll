@@ -1,0 +1,32 @@
+---
+layout: primary_and_sidebar
+title: Newsletters
+subtitle: NEWSLETTERS
+description_paragraphs:
+  - The NCC puts out a quarterly newsletter consisting of current projects, upcoming events, and highlights from the most recent board meeting.
+---
+
+{% comment %}
+This page renders all newsletter PDF files under /newsletters/.
+
+Newsletters MUST be named in the following format to be entered into the appropriate section on this page:
+YYYY-MM-DD_vXnY, where X is the volume number and Y is the issue number. The issue number may contain dashes (eg. 1-2).
+{% endcomment %}
+
+{% assign pdf_files = site.static_files | where_exp:"file", "file.extname == '.pdf' and file.path contains '/assets/documents/newsletters/'" %}
+{% assign grouped_files = pdf_files | group_by_exp:"item", "item.name | slice: 0, 4" | reverse %}
+
+{% for year_group in grouped_files %}
+    <div class="column mcb-column one-fourth column_column  column-margin-10px" style="height: 246px;">
+        <div class="column_attr clearfix" style="background-color:/#D2C4B0; padding:20px;">
+            <h4 align="center">{{ year_group.name }}</h4>
+            <hr class=" hr_color" style="margin: 0 auto 20px;"> 
+            {% for pdf_file in year_group.items %}
+                {% assign month = pdf_file.name | split: "_" | first | date: "%B" %}
+                {% assign volume_name = pdf_file.name | split: "_" | last | split: "." | first | remove: "v" | replace: "n", ":" %}
+            <p>Volume {{ volume_name }} - <a href="{{ pdf_file.path }}" target="_blank">{{ month }}</a><br></p>
+
+    {% endfor %}
+        </div>  
+    </div>
+{% endfor %}

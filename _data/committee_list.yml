@@ -1,0 +1,84 @@
+committee_seats:
+  - title: Acquisitions
+    holder: Bob Simmons
+    email: acquisitions@necaveconservancy.org
+
+  - title: Bylaws
+    holder: Joe Levinson
+    email: bylaws@necaveconservancy.org
+
+  - title: Education
+    holder: Thom Engel
+    email: education@necaveconservancy.org
+
+  - title: Membership
+    holder: Josh Schultz
+    email: membership@necaveconservancy.org
+
+  - title: Nominating
+    holder: Norm Berg
+    email: nominating@necaveconservancy.org
+
+  - title: Fundraising
+    holder: Leslie Hatfield
+    email: fundraising@necaveconservancy.org
+
+  - title: Investment
+    holder: Vacant
+    email: investment@necaveconservancy.org
+
+  - title: Barn Dance
+    holder: Emily Davis & Mike Warner
+    email: barndance@necaveconservancy.org
+
+  - title: Office
+    holder: Emily Davis & Mike Warner
+    email: office@necaveconservancy.org
+
+  - title: Publications
+    holder: Erik Nieman
+    email: publications@necaveconservancy.org
+
+  - title: Editor
+    holder: Danny Brass
+    email: newsletter@necaveconservancy.org
+
+  - title: Publisher
+    holder: Vacant
+    email: publisher@necaveconservancy.org
+
+  - title: Publicity
+    holder: Erik Nieman
+    email: publicity@necaveconservancy.org
+
+  - title: Risk Management
+    holder: Mitch Berger
+    email: riskmanagement@necaveconservancy.org
+
+  - title: Science
+    holder: R. Laurence Davis & Paul Rubin
+    email: science@necaveconservancy.org
+
+  - title: Technology Committee
+    holder: Michael Chu
+    email: technology@necaveconservancy.org
+
+  - title: Volunteer Value
+    holder: Vince Kappler
+    email: volunteervalue@necaveconservancy.org
+
+  - title: Stewardship Coordinator
+    holder: Jacob Morris-Siegel
+    email: preserves@necaveconservancy.org
+
+  - title: Surprise Cave Liaison
+    holder: Bob Simmons
+    email: suprise@necaveconservancy.org
+
+  - title: Thacher Park Liasion
+    holder: Thom Engel
+    email: thacher@necaveconservancy.org
+
+  - title: Special Use
+    holder: Thom Engel
+    email: specialuse@necaveconservancy.org

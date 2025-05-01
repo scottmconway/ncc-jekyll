@@ -1,0 +1,28 @@
+<div class="section mcb-section" style="padding-top:50px; padding-bottom:10px; background-color:#F0EBE3">
+          <div class="section-divider triple-triangle up"></div>
+          <div class="section_wrapper mcb-section-inner">
+            <div class="wrap mcb-wrap one valign-top clearfix">
+              <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column column-margin-10px">
+                  <div class="column_attr clearfix">
+                      {% if page.subtitle %}
+                          <h2>{{ page.subtitle }}</h2>
+                      {% else %}
+                          <h2>{{ page.title }}</h2>
+                    {% endif %}
+                      <p></p>
+                    <div style="width: 20%; height: 3px; background: #47360D; display: inline-block;"></div>
+                    {% for paragraph in  page.description_paragraphs %}
+                        {% if page.description_small %}
+                        <p>{{ paragraph | markdownify }}</p>
+                        {% else %}
+                        <p class="big">{{ paragraph | markdownify }}</p>
+                        {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+

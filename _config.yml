@@ -1,0 +1,70 @@
+# Site settings
+site: necaveconservancy
+title: necaveconservancy.org
+lang: en-US
+timezone:  NorthAmerica/NewYork 
+
+# Organization settings
+organization:
+  facebookUrl: "https://www.facebook.com/groups/necaveconservancy"
+
+# URL settings
+url: "https://necaveconservancy.org"
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+  - package.json
+    package-lock.json
+
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  preserves:
+    output: true
+    permalink: /:slug
+  newsletters:
+    output: true
+    permalink: /newsletters/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "/preserves/"
+      type: "preserves"
+    values:
+      layout: "preserve"
+
+relative_links:
+  enabled:     true
+  collections: true
