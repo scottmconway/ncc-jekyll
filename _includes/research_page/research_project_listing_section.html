@@ -1,0 +1,35 @@
+<div class="section mcb-section" style="padding-top:30px; padding-bottom:10px; background-color:#D2C4B0">
+    <div class="section_wrapper mcb-section-inner">
+        <div class="wrap mcb-wrap one  valign-top clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column  column-margin-10px">
+                    <div class="column_attr clearfix">
+                        <p class="big">Interested individuals must submit a research proposal that meets the requirements of Appendix C of the NCC Board Manual and any special conditions for research found in the preserve’s management plan to the Science Coordinator. Upon the recommendation of the coordinator, the Board will either approve or disallow the research project. If the project is approved, a Research Letter of Agreement must be signed by the NCC and the applicant before the project can start.</p>
+                        <p class="big">Previously approved research projects include:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% assign pdf_files = site.static_files | where_exp:"file", "file.extname == '.pdf' and file.path contains '/assets/documents/research_projects/'" %}
+        {% for pdf_file in pdf_files %}
+            {% assign remainder = forloop.index0 | modulo: 4 %}
+            {% if remainder == 0 %}
+                {% if forloop.index0 != 0 %}
+                    </div></div>
+                {% endif %}
+                <div class="wrap mcb-wrap one  valign-top clearfix">
+                    <div class="mcb-wrap-inner">
+            {% endif %}
+
+            <div class="column mcb-column one-fourth column_column  column-margin-">
+                <div class="column_attr clearfix">
+                    <a class="content_link " href="{{ pdf_file.path }}" target="_blank"><span class="icon"><i class="icon-doc-text-inv"></i></span>
+                        <span class="title">{{ pdf_file.name | remove: ".pdf" }}</span>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+</div>
+</div>
+</div>
