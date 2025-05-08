@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Home
+sway_colors:
+    top_color: "#D2C4B0"
+    bottom_color: "#E7DFD4"
 ---
 
 {% include section_open.html %}
 {% include home_page/mission_section.html %} 
 {% include home_page/preserves_and_calendar_section.html %}
-{% include empty_sway_section.html %}
+{% include empty_sway_section.html data=page.sway_colors %}
 {% include home_page/join_section.html %}
 {% include section_close.html %}
