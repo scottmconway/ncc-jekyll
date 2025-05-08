@@ -1,7 +1,7 @@
 ---
 title: "Bentleys Cave Preserve"
 layout: preserve
-permalink: /preserves/bentleys
+permalink: /preserves/bentleys/
 manager: "Devon Hedges"
 email: "bentleys@necaveconservancy.org"
 managementPlanPath: "/preserves/bentleys/management_plan.pdf"
