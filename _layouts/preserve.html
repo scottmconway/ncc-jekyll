@@ -86,8 +86,26 @@
           <div class="section_wrapper mcb-section-inner">
             <div class="wrap mcb-wrap one valign-top clearfix">
               <div class="mcb-wrap-inner">
-                <div class="column mcb-column one-third column_icon_box">
-                  <div class="icon_box icon_position_left has_border">
+
+                {% comment %}
+                Dynamically figure out the width to render the elements
+                "Resources", "Management Plan", and "Maps"
+                {% endcomment %}
+
+                {% assign column_width = "one" %}
+                {% if page.managementPlanPath and page.mapPath %}
+                    {% assign column_width = "one-third" %}
+                {% elsif page.managementPlanPath or page.mapPath %}
+                    {% assign column_width = "one-second" %}
+                {% endif %}
+
+                <div class="column mcb-column {{ column_width }} column_icon_box">
+                  {% if column_width == "one" %}
+                    {% assign resources_border = "no_border" %}
+                  {% else %}
+                    {% assign resources_border = "has_border" %}
+                  {% endif %}
+                  <div class="icon_box icon_position_left {{ resources_border }}">
                     <a class="" href="/links/">
                     <div class="icon_wrapper">
                       <div class="icon">
@@ -103,8 +121,13 @@
                   </div>
                 </div>
                 {% if page.managementPlanPath %}
-                <div class="column mcb-column one-third column_icon_box">
-                  <div class="icon_box icon_position_left has_border">
+                  {% if column_width == "one-second" %}
+                    {% assign management_plan_border = "no_border" %}
+                  {% else %}
+                    {% assign management_plan_border = "has_border" %}
+                  {% endif %}
+<div class="column mcb-column {{ column_width }} column_icon_box">
+    <div class="icon_box icon_position_left {{ management_plan_border }}">
                     <a class="" href="{{ page.managementPlanPath }}" target="_blank">
                     <div class="icon_wrapper">
                       <div class="icon">
@@ -121,8 +144,8 @@
                 </div>
                 {% endif %}
                 {% if page.mapPath %}
-                <div class="column mcb-column one-third column_icon_box">
-                  <div class="icon_box icon_position_left no_border">
+                  <div class="column mcb-column {{ column_width }} column_icon_box">
+                      <div class="icon_box icon_position_left no_border">
                     <a class="" href="{{ page.mapPath }}" target="_blank">
                     <div class="icon_wrapper">
                       <div class="icon">
