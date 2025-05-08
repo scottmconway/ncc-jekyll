@@ -14,8 +14,6 @@ title: Committee Chairs
 <div class="column mcb-column one-second column_column  column-margin-">
     <div class="column_attr clearfix">
         <dl> 
-            <dt>Stewardship Coordinator</dt> <dd>Jacob Morris-Siegel<br>preserves@necaveconservancy.org </dd>
-            <dt>Special Use</dt> <dd>Thom Engel<br>specialuse@necaveconservancy.org</dd>
             {% for preserve in site.preserves %}
                 <dt>{{ preserve.title }}</dt> <dd>{{preserve.manager}}<br><a href="mailto:{{ preserve.email }}">{{ preserve.email }}</a></dd>
             {% endfor %}

@@ -58,42 +58,11 @@
           <h4>Cave Preserves</h4>
           <div class="textwidget">
             <ul style="line-height: 32px;">
-              <li>
-                <a href="/clarksville-preserve/">Clarksville Cave</a>
-              </li>
-              <li>
-                <a href="/ella-armstrong-preserve/">Ella Armstrong Cave</a>
-              </li>
-              <li>
-                <a href="/knox-preserve/">Knox Cave</a>
-              </li>
-              <li>
-                <a href="/onesquethaw-preserve/">Onesquethaw Cave</a>
-              </li>
-              <li>
-                <a href="/sellecks-preserve/">Sellecks Cave</a>
-              </li>
-              <li>
-                <a href="/spider-preserve/">Spider Cave</a>
-              </li>
-              <li>
-                <a href="/alan-traino-preserve/">Alan Traino Preserve</a>
-              </li>
-              <li>
-                <a href="/bensons-preserve/">Bensons Cave</a>
-              </li>
-              <li>
-                <a href="/bentleys-preserve/">Bentleys Cave</a>
-              </li>
-              <li>
-                <a href="/merlin-preserve/">Merlins Cave</a>
-              </li>
-              <li>
-                <a href="/salamander-preserve/">Salamander Preserve</a>
-              </li>
-              <li>
-                <a href="/jack-packers-preserve/">Jack Packers Preserve</a>
-              </li>
+                {% for preserve in site.preserves %}
+                <li>
+                    <a href="{{ preserve.permalink }}">{{ preserve.title }}</a>
+                </li>
+                {% endfor %}
             </ul>
           </div>
         </aside>

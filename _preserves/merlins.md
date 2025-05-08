@@ -1,5 +1,5 @@
 ---
-title: "Melins Cave Preserve"
+title: "Merlins Cave Preserve"
 layout: preserve
 permalink: /preserves/merlins/
 manager: "Morgan Ingalls & Ramon Armen"
