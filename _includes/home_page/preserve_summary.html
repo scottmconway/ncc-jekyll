@@ -5,18 +5,30 @@
 
 <h4>The NCC currently owns several cave and karst areas, including:</h4>
 </div></div>
+
+{% assign len_preserves = site.preserves | size %}
+{% assign midpoint = len_preserves | divided_by: 2 %}
+{% assign odd = len_preserves | modulo: 2 %}
+{% if odd == 1 %}
+    {% assign midpoint = midpoint | plus: 1 %}
+{% endif %}
+{% assign preserves_first_half = site.preserves | slice: 0, midpoint %}
+{% assign preserves_second_half = site.preserves | slice: midpoint, len_preserves %}
+
 <div class="column mcb-column one-second column_column  column-margin-0px"><div class="column_attr clearfix"><ul>
-  {% for preserve in site.preserves %}
-  <li> <a href="{{ preserve.permalink }}">{{ preserve.title}}</a> </li>
-  {% endfor %}
+            {% for preserve in preserves_first_half %}
+                <li>
+                    <a href={{ preserve.permalink }}>{{ preserve.title }}</a>
+                </li>
+            {% endfor %}
 </ul></div></div>
 
 <div class="column mcb-column one-second column_column  column-margin-0px"><div class="column_attr clearfix"><ul>
-<li><a href="/ella-armstrong-preserve/" style="color:/#00644B;">Ella Armstrong Cave</a></li>
-<li><a href="/bentleys-preserve/" style="color:/#00644B;">Bentley's Cave</a></li>
-<li><a href="/bensons-preserve/" style="color:/#00644B;">Benson's Cave</a></li>
-<li><a href="/sellecks-preserve/" style="color:/#00644B;">Sellecks Karst Preserve</a></li>
-<li><a href="/spider-preserve/" style="color:/#00644B;">Spider Cave</a></li>
+            {% for preserve in preserves_second_half %}
+                <li>
+                    <a href={{ preserve.permalink }}>{{ preserve.title }}</a>
+                </li>
+            {% endfor %}
 </ul></div></div>
 <div class="column mcb-column one column_column  column-margin-"><div class="column_attr clearfix">
 <p class="big">NCC members assist in the exploration, survey, and protection of these natural resources, and manage them so you can explore them yourself.</p>
