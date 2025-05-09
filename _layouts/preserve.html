@@ -26,7 +26,7 @@
                 <div class="column mcb-column one column_column column-margin-10px">
                   <div class="column_attr clearfix">
                     {% for paragraph in page.topParagraphs %}
-                      <p>{{ paragraph | liquid | markdownify }}</p>
+                      {{ paragraph | liquid | markdownify }}
                     {% endfor %}
                   </div>
                 </div>
@@ -51,10 +51,10 @@
                 <div class="column mcb-column one column_column column-margin-20px">
                   <div class="column_attr clearfix">
                     {% for paragraph in page.bottomParagraphs %}
-                      <p>{{ paragraph | markdownify }}</p>
+                      {{ paragraph | markdownify }}
                     {% endfor %}
                     {% for paragraph in site.data.common_preserve_requirements.paragraphs %}
-                    <p>{{ paragraph[1] | markdownify }}</p>
+                      {{ paragraph[1] | markdownify }}
                     {% endfor %}
                     <ul>
                       {% if page.party %}
@@ -69,10 +69,10 @@
                         .</li>
                       {% endif %}
                       {% for req in page.longRequirements %}
-                        <li>{{ req | markdownify }}</li>
+                        <li>{{ req | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                       {% endfor %}
                       {% for req in site.data.common_preserve_requirements.long_requirements %}
-                        <li>{{ req[1] | markdownify }}</li>
+                        <li>{{ req[1] | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                       {% endfor %}
 
                     </ul>

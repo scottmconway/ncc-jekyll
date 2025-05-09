@@ -34,7 +34,7 @@
           <ul>
             {% for req in preserve.shortRequirements %}
             <li>
-              {{ req | markdownify }} </li>
+                {{ req | markdownify | remove: '<p>' | remove: '</p>' }}
             </li>
             {% endfor %}
           </ul>

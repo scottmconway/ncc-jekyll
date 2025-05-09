@@ -14,9 +14,9 @@
                     <div style="width: 20%; height: 3px; background: #47360D; display: inline-block;"></div>
                     {% for paragraph in  page.description_paragraphs %}
                         {% if page.description_small %}
-                        <p>{{ paragraph | markdownify }}</p>
+                        <p>{{ paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                         {% else %}
-                        <p class="big">{{ paragraph | markdownify }}</p>
+                        <p class="big">{{ paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                         {% endif %}
                     {% endfor %}
                   </div>

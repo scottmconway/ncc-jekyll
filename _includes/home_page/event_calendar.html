@@ -20,7 +20,7 @@
                 <h5 style="color:#00644B;">{{ event.date }}</h5>
               <p><b>{{ event.name}}</b><br>
               {{ event.location_and_time }}<br>
-              {{ event.description | markdownify }} <br>
+              {{ event.description | markdownify | remove: '<p>' | remove: '</p>' }} <br>
             </div>
           </div>
         </div>
