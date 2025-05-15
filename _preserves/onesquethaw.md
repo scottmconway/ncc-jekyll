@@ -11,7 +11,7 @@ party:
   maximum: null
 
 shortRequirements:
-  - ""
+  - "Kneepads are required"
 topParagraphs:
   - "Onesquethaw Cave is the second longest known cave in Albany County, NY with just over one mile of mapped passage."
   - "The cave entrance is known to flood during periods of significant rainfall, and thus may be closed during periods of wet weather. In extreme flooding, the cave may fill to the ceiling throughout its length."

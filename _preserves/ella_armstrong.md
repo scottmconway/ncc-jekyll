@@ -28,6 +28,6 @@ winterClosure: true
 redirect_from:
   - /ella-armstrong-preserve
 special_use_groups_recommended: false
+vertical_gear_required: true
 permit_required: false
-vertial_required: true
 ---

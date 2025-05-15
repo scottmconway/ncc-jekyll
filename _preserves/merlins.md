@@ -30,6 +30,6 @@ imagePaths:
 winterClosure: true
 redirect_from:
   - /merlin-preserve
-special_use_groups_recommended: true
+special_use_groups_recommended: false
 permit_required: true
 ---

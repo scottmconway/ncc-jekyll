@@ -9,7 +9,9 @@ mapPath: "/preserves/knox/map.pdf"
 party:
   minimum: 3
 shortRequirements:
-  - ""
+  - "Kneepads highly recommended"
+  - "Key needed for Crossbones cave"
+  - "For Crossbones cave, each party member must be proficient in vertical caving techniques and have their own set of gear"
 topParagraphs:
   - "The Knox Cave Preserve is in Albany County NY and has been owned by the Northeastern Cave Conservancy (NCC) since 1979."
   - "There are two known caves on the property. Knox Cave, known since at least 1787 and commercialized from 1933 to 1958, is one of the most visited caves in the northeast. Crossbones Cave was discovered by digging in the \"New Sink\" in early 2000 and is an advanced vertical cave."
