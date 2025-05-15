@@ -42,9 +42,9 @@ collections:
   preserves:
     output: true
     permalink: /:slug
-  newsletters:
+  guestbook_landing_pages:
     output: true
-    permalink: /newsletters/:slug
+    permalink: /:slug
   
 defaults:
   -
