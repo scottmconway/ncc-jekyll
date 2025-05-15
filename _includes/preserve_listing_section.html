@@ -34,6 +34,12 @@
     </li>
     {% endfor %}
 
+    {% if preserve.vertical_gear_required %}
+    <li>
+        {{ site.data.common_preserve_requirements.vertical.short_requirement }}
+    </li>
+    {% endif %}
+
     {% if preserve.special_use_groups_recommended %}
     <li>
         <a href="/cave_permit_specialuse" >Special Use groups</a> require a permit

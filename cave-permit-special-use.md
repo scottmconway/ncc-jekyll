@@ -12,8 +12,8 @@ description_paragraphs:
 
 sections:
     - file: subtitle_section.html
-    - file: cave_permit_info_page/caves_owned_by_ncc_section.html
-    - file: cave_permit_info_page/caves_owned_by_nss_section.html
+    - file: cave_permit_info_special_use_page/caves_owned_by_ncc_section.html
+    - file: cave_permit_info_special_use_page/caves_owned_by_nss_section.html
 redirect_from:
   - /cave_permit_specialuse
 ---
