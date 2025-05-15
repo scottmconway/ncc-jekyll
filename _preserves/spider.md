@@ -14,8 +14,6 @@ shortRequirements:
 topParagraphs:
   - "Spider is located near Gallupville in Schoharie County, NY."
   - "It is a short horizontal cave with a picturesque entrance."
-  - "Spider does not require special permission or a release form for caving trips for regular users."
-  - "Special use groups such as summer camps, church groups, scouts, and school groups are asked to contact the NCC special use coordinators to schedule trips into the cave. Due to the size of the cave, Spider is not recommended for special use groups."
 imagePaths:
   - "/preserves/spider/images/01.jpg"
 winterClosure: false

@@ -8,7 +8,7 @@ long_requirements:
   unique_resource: "All caves must be treated as unique natural resources, and nothing should be removed from any cave except trash."
   work_projects: "All work projects must be clearly defined and authorized beforehand."
   trash: "Each group is expected to clean up any trash in the cave or on the property."
-  white_nose: "Follow US Fish and Wildlife's [decontamination procedures for WNS](https://www.whitenosesyndrome.org/topics/decontamination)"
+  white_nose: "Follow US Fish and Wildlife's [decontamination procedures for WNS](https://www.whitenosesyndrome.org/topics/decontamination)."
 
 special_use:
   recommended: "Special use groups such as summer camps, church groups, scouts, and school groups are asked to contact the [NCC special use coordinators](mailto:specialuse@necaveconservancy.org) to schedule trips to the preserve."
@@ -17,4 +17,8 @@ special_use:
 vertical:
   long_requirement: "Each party member must be proficient in vertical caving techniques and must have their own vertical gear with which they are familiar."
   short_requirement: "Each party member must be proficient in vertical caving techniques and have their own set of gear"
-  paragraph:
+
+preserve_top_paragraphs:
+  regular_permit:
+    required:  "This preserve requires a permit for access by regular users."
+    not_required: "This preserve does not require special permission or a release form for regular users."

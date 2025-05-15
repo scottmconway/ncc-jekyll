@@ -18,10 +18,6 @@ topParagraphs:
   - "The largest of the caves is Bentley's Cavern with approximately 1000 feet of passage. The entrance to the cave is in the edge of a small cliff, and opens into a large passageway with a tall ceiling. The passageway terminates into a low crawl where a stream enters the cave."
   - "Dry Valley Cave was discovered in 1991."
 
-bottomParagraphs:
-  - ""
-longRequirements:
-  - ""
 imagePaths:
   - "/preserves/bentleys/images/dry_valley_cavern.jpg"
 winterClosure: true

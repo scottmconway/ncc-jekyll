@@ -15,11 +15,6 @@ topParagraphs:
   - "For more information about the cave and instructions on how to visit the preserve, please contact the preserve manager at [traino_preserve@necaveconservancy.org](mailto:traino_preserve@necaveconservancy.org)"
   - "Special use groups such as summer camps, church groups, scouts, and school groups are asked to contact the [NCC special use coordinators](mailto:specialuse@necaveconservancy.org) to schedule trips into the caves."
 
-longRequirements:
-  - "Slingerlands Hellhole and George's Surprise must be treated as unique natural resources, and nothing should be taken out of the caves except trash."
-  - "All work projects must be clearly defined and authorized beforehand."
-  - "Each group is expected to clean up any trash in the cave or on the property."
-
 imagePaths:
   - "/preserves/alan-traino/images/Slinglerands-Entrance.jpg"
   - "/preserves/alan-traino/images/Slingerlands-Sinkhole.jpg"

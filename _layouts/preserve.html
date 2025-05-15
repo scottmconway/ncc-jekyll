@@ -28,6 +28,12 @@
                     {% for paragraph in page.topParagraphs %}
                       {{ paragraph | liquid | markdownify }}
                     {% endfor %}
+
+                    {% if page.permit_required %}
+                      <p>{{ site.data.common_preserve_requirements.preserve_top_paragraphs.regular_permit.required }}</p>
+                    {% else %}
+                      <p>{{ site.data.common_preserve_requirements.preserve_top_paragraphs.regular_permit.not_required }}</p>
+                    {% endif %}
                   </div>
                 </div>
 
@@ -71,6 +77,9 @@
                       {% for req in page.longRequirements %}
                         <li>{{ req | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                       {% endfor %}
+                      {% if page.vertical_gear_required %}
+                        <li>{{ site.data.common_preserve_requirements.vertical.long_requirement }}</li>
+                      {% endif %}
                       {% for req in site.data.common_preserve_requirements.long_requirements %}
                         <li>{{ req[1] | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                       {% endfor %}

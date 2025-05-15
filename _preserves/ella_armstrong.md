@@ -15,11 +15,6 @@ shortRequirements:
 topParagraphs:
   - "Ella Armstrong Cave is located near Knox and Crossbones Caves in Albany County, NY."
   - "It is a short vertical cave with an 1879 inscription of Ella Armstrong at the base of the current entrance drop, from where the current name of the cave originates."
-  - "Ella Armstrong does not require special permission or a release form for caving trips for regular users."
-bottomParagraphs:
-  - ""
-longRequirements:
-  - ""
 imagePaths:
   - "/preserves/ella-armstrong/images/entrance.jpg"
   - "/preserves/ella-armstrong/images/cave1.jpg"

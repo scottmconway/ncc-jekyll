@@ -8,7 +8,7 @@ managementPlanPath: null
 mapPath: null
 party:
   minimum: 3
-  maximum: null
+  maximum: 15
 
 topParagraphs:
   - "Salamander Preserve is located in Ulster County, NY. It contains Salamander Cave, a horizontal cave with approximately 700 feet of mapped passage."
