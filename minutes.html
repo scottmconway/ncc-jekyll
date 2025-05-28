@@ -18,15 +18,15 @@ YYYY-MM-DD_minutes_LOCATION.pdf, where LOCATION is a string containing any (file
 
 {% for year_group in grouped_files %}
     <div class="column mcb-column one-fourth column_column  column-margin-10px" style="height: 246px;">
-        <div class="column_attr clearfix" style="background-color:/#D2C4B0; padding:20px;">
-            <h4 align="center">{{ year_group.name }}</h4>
+        <div class="column_attr clearfix" style="padding:20px;">
+            <h4 style="text-align: center;">{{ year_group.name }}</h4>
             <hr class=" hr_color" style="margin: 0 auto 20px;">
             <p>
                 {% assign year_items_reversed = year_group.items | reverse %}
                 {% for pdf_file in year_items_reversed %}
                     {% assign month = pdf_file.name | split: "_" | first | date: "%B" %}
                     {% assign location = pdf_file.name | split: "_" | last | split: "." | first %}
-                    {{ location }} - <a href="{{ pdf_file.path }}" target="_blank">{{ month }}</a><br>
+                    {{ location }} - <a href="{{ pdf_file.path | url_encode }}" target="_blank">{{ month }}</a><br>
                 {% endfor %}
             </p>
         </div>  

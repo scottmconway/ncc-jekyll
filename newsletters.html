@@ -18,8 +18,8 @@ YYYY-MM-DD_vXnY, where X is the volume number and Y is the issue number. The iss
 
 {% for year_group in grouped_files %}
     <div class="column mcb-column one-fourth column_column  column-margin-10px" style="height: 246px;">
-        <div class="column_attr clearfix" style="background-color:/#D2C4B0; padding:20px;">
-            <h4 align="center">{{ year_group.name }}</h4>
+        <div class="column_attr clearfix" style="padding:20px;">
+            <h4 style="text-align: center;">{{ year_group.name }}</h4>
             <hr class=" hr_color" style="margin: 0 auto 20px;"> 
             {% for pdf_file in year_group.items %}
                 {% assign month = pdf_file.name | split: "_" | first | date: "%B" %}
