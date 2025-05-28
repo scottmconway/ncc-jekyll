@@ -5,10 +5,22 @@ sway_colors:
     top_color: "#D2C4B0"
     bottom_color: "#E7DFD4"
 ---
+<div class="sections_group" style=",margin: 0; padding: 0; border: 0; font: inherit; width: 100%;">
+    <div class="entry-content" itemprop="mainContentOfPage">
+        {% include home_page/mission_section.html %}
+        {% include home_page/preserves_and_calendar_section.html %}
+        {% include empty_sway_section.html data=page.sway_colors %}
+        {% include home_page/join_section.html %}
 
-{% include section_open.html %}
-{% include home_page/mission_section.html %} 
-{% include home_page/preserves_and_calendar_section.html %}
-{% include empty_sway_section.html data=page.sway_colors %}
-{% include home_page/join_section.html %}
-{% include section_close.html %}
+        <div class="section the_content no_content">
+            <div class="section_wrapper">
+                <div class="the_content_wrapper"></div>
+            </div>
+        </div>
+        <div class="section section-page-footer">
+            <div class="section_wrapper clearfix">
+                <div class="column one page-pager"></div>
+            </div>
+        </div>
+    </div>
+</div>

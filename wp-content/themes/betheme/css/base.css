@@ -361,7 +361,7 @@ body.layout-boxed .vc_row-no-padding .wpb_column{padding:0}
 body								{ min-width: 960px;}
 body.admin-bar						{ position:relative;}
 
-#Wrapper 							{ max-width: 1240px; margin: 0px auto; overflow:hidden; -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .06); box-shadow: 0px 0px 15px rgba(0, 0, 0, .06);}
+#Wrapper 							{ max-width: 1240px; margin: 0px auto; -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .06); box-shadow: 0px 0px 15px rgba(0, 0, 0, .06);}
 
 .layout-boxed						{ padding: 25px 0;}
 .layout-boxed.boxed-no-margin		{ padding: 0; }
