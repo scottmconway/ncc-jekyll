@@ -26,9 +26,9 @@ YYYY-MM-DD_minutes_LOCATION.pdf, where LOCATION is a string containing any (file
                 {% for pdf_file in year_items_reversed %}
                     {% assign month = pdf_file.name | split: "_" | first | date: "%B" %}
                     {% assign location = pdf_file.name | split: "_" | last | split: "." | first %}
-                    {{ location }} - <a href="{{ pdf_file.path | url_encode }}" target="_blank">{{ month }}</a><br>
+                    {{ location }} - <a href="{{ pdf_file.path | url_encode_filename }}" target="_blank">{{ month }}</a><br>
                 {% endfor %}
             </p>
-        </div>  
+        </div>
     </div>
 {% endfor %}

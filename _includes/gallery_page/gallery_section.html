@@ -59,9 +59,9 @@ Each group is then rendered lexigraphically based on TITLE and ID.
                                 <dt class="gallery-icon landscape">
                                     <div class="image_frame scale-with-grid">
                                         <div class="image_wrapper">
-                                            <a href="{{ image_file.path }}" rel="prettyphoto[gallery-1]">
+                                            <a href="{{ image_file.path | url_encode_filename }}" rel="prettyphoto[gallery-1]">
                                                 <div class="mask"></div>
-                                                <img src="{{ image_file.path }}" class="attachment-full size-full" alt="{{ image_description }}" decoding="async" loading="lazy" style="height: auto; width: 100%;">
+                                                <img src="{{ image_file.path | url_encode_filename }}" class="attachment-full size-full" alt="{{ image_description }}" decoding="async" loading="lazy" style="height: auto; width: 100%;">
                                             </a>
                                         </div>
                                     </div>

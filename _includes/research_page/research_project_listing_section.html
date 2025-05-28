@@ -23,7 +23,7 @@
 
             <div class="column mcb-column one-fourth column_column  column-margin-">
                 <div class="column_attr clearfix">
-                    <a class="content_link " href="{{ pdf_file.path }}" target="_blank"><span class="icon"><i class="icon-doc-text-inv"></i></span>
+                    <a class="content_link " href="{{ pdf_file.path | url_encode_filename }}" target="_blank"><span class="icon"><i class="icon-doc-text-inv"></i></span>
                         <span class="title">{{ pdf_file.name | remove: ".pdf" }}</span>
                     </a>
                 </div>
