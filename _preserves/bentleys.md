@@ -5,7 +5,7 @@ permalink: /preserves/bentleys/
 manager: "Devon Hedges"
 email: "bentleys@necaveconservancy.org"
 managementPlanPath: "/preserves/bentleys/management_plan.pdf"
-mapPath: "/preserves/benteys/map.pdf"
+mapPath: "/preserves/bentleys/map.pdf"
 party:
   minimum: 3
   maximum: 15
